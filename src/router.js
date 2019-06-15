@@ -35,6 +35,7 @@ const { getAllCategories } = require("./controllers/categories");
 const apiRoutes = express.Router();
 
 apiRoutes
+  .get("/", mainRoute)
   .post("/auth/login", login)
   .post("/auth/register", signUp)
   .post("/menu", createMenuItem)
