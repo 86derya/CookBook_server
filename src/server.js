@@ -12,7 +12,7 @@ const errorHandler = (request, response, next) => {
   next();
 };
 
-const hostedAt = "https://foodydederiaserver.herokuapp.com/";
+const hostedAt = "https://foodydederiaserver.herokuapp.com";
 const PORT = process.env.PORT || config.port;
 
 const startServer = port => {
